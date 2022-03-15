@@ -1,0 +1,83 @@
+Clases a crear:
+-Jugador
+-Dado
+-Apuesta
+-Tirada
+-Instrucciones
+-Jugar
+-MenuJuego
+-Program (main)
+
+
+----Clase Jugador----
+Propiedades:
+-string nombre;
+-double dinero;
+
+Métodos:
+-public Jugador(string nombre)
+-getters & setters.
+
+----Clase Dado----
+Propiedades:
+-int ladoMin;
+-int ladoMax;
+Métodos:
+-public Dado()
+-getters & setters.
+
+-----Clase Apuesta-----
+Propiedades:
+-string tipoApuesta;
+-double dineroApostado;
+Métodos:
+-public Apuesta(string tipoApuesta, double dinero)
+-getters & setters.
+
+-----Clase Tirada-----
+Propiedades:
+-Jugador jugador;
+-Dado dado;
+-int dado1;
+-int dado2;
+-int valorTirada;
+-Random random = new Random();
+Métodos:
+-public Tirada (Jugador jugador, Dado dado)
+-getters & setters.
+
+-----Clase Jugar-----
+Propiedades:
+-Jugador jugador;
+-Dado dado;
+-Apuesta apuesta;
+-Tirada tirada;
+Métodos:
+-Boolean Gana(Apuesta apuesta, Tirada tirada, int numaApostar)
+
+-----Clase Instrucciones-----
+Propiedades:
+-No tiene.
+Métodos:
+-mostrarInstrucciones()
+
+-----Clase menuJuego-----
+Propiedades:
+-string opcion;
+-string opcion2;
+-int numApostar;
+-double dineroApostado;
+-double ganancia;
+-double ganadoperdido = 0;
+-Boolean confirmacion;
+-Jugador jugador;
+-Dado dado;
+-Apuesta apuesta;
+-Tirada tirada;
+-Jugar jugar;
+-Instrucciones instrucciones;
+-List <int> historial;
+
+-----Clase Program-----
+-menuJuego Menu;
+-menu.menu()
